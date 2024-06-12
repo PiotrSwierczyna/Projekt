@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Wynik</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Wynik</h1>
+<p th:text="'Liczba 1: ' + ${operacja.liczba1}" />
+<p th:text="'Liczba 2: ' + ${operacja.liczba2}" />
+<p th:text="'Operacja: ' + ${operacja.operacja}" />
+<p th:text="'Wynik: ' + ${operacja.wynik}" />
+<a href="/operacja">Wykonaj kolejną operację</a>
+</body>
+</html>

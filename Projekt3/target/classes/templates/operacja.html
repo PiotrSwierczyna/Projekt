@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Formularz Operacji</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Formularz</h1>
+<form action="#" th:action="@{/operacja}" th:object="${operacja}" method="post">
+    <p>Liczba 1: <input type="text" th:field="*{liczba1}" /></p>
+    <p>Liczba 2: <input type="text" th:field="*{liczba2}" /></p>
+    <p>Operacja:
+        <select th:field="*{operacja}">
+            <option value="dodawanie">Dodawanie</option>
+            <option value="odejmowanie">Odejmowanie</option>
+            <option value="mnożenie">Mnożenie</option>
+            <option value="dzielenie">Dzielenie</option>
+        </select>
+    </p>
+    <p><input type="submit" value="Wyślij" /> <input type="reset" value="Resetuj" /></p>
+</form>
+</body>
+</html>
